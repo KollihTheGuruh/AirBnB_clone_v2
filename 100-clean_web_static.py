@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 # Fabfile to delete out-of-date archives.
 import os
+from threading import local
 from fabric.api import *
 
-env.hosts = ["104.196.168.90", "35.196.46.172"]
+env.hosts = ["52.207.208.207", "100.26.57.232"]
 
 
 def do_clean(number=0):
